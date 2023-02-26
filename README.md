@@ -2,7 +2,7 @@
 Our project for AthenaHacks 2023: A place to join other women to make going to the gym less intimidating!
 Contributers: Nina Moothedath and Allena Villanueva
 
-<a href="https://devpost.com/software/gymgals"></a>
+<a href="https://devpost.com/software/gymgals">Devpost</a>
 
 To view information submitted through site on Google Sheets:
 <a href="https://docs.google.com/spreadsheets/d/1EW93qMpRCmbi-SQlt0n1ttOV1ef0c1AL-qPK0_hToxk/edit#gid=0">Mailing list,</a>
