@@ -4,7 +4,7 @@ Contributers: Nina Moothedath and Allena Villanueva
 
 To view information submitted through site on Google Sheets:
 <a href="https://docs.google.com/spreadsheets/d/1EW93qMpRCmbi-SQlt0n1ttOV1ef0c1AL-qPK0_hToxk/edit#gid=0">Mailing list</a>
-<a href"https://docs.google.com/spreadsheets/d/1l5gIY9o7NAVcmtt36Hir-7WjcxTOw3K-PDm_VN46W3w/edit#gid=0">Schedule</a>
+<a href="https://docs.google.com/spreadsheets/d/1l5gIY9o7NAVcmtt36Hir-7WjcxTOw3K-PDm_VN46W3w/edit#gid=0">Schedule</a>
 
 
 HTML-> Google sheets Google Scripts Code Help: https://github.com/levinunnink/html-form-to-google-sheet
