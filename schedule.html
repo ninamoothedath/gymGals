@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title></title>
+    <style type="text/css">
+        table, th, td {
+            border: 1px solid black;
+            color: black;
+            background-color: #F294C0;
+        }
+        body {
+            background-color: #FAC9E0;
+        }
+        #fmain #firstText,#fmain h1{
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <div id="nav"> 
+        <div id="home">
+          <p id="homeT"><a href="index.html">GymGals</a></p>
+        </div>
+        <div class="link">
+          <p><a href="form.html">Mailing List</a></p>
+        </div>
+        <div class="link">
+          <p><a href="schedule.html">Schedule</a></p>
+        </div>
+        <div class="link">
+          <p><a href="index.html#gallery">About</a></p>
+        </div>
+  </div>
+
+    <div id="fmain">
+        <h1>Find a Gym Buddy</h1>
+        <p id="firstText">Select which days of the week work best for you to go to the gym with a buddy at a gym near you!:</p>
+
+        <br>
+
+        <form class="checkboxes" method="POST" 
+          action="https://script.google.com/macros/s/AKfycby3vLsuxrTNafqK2m7MqviGUP4HFtPZ6pDvFC1ZgzHNpHrvWgnPrOMU_weU4pANYoWh/exec">
+            <p>
+                <label for="location">What Gym in LA are you going to?</label>
+                <br>
+                <input id="location" name="location" type="text" value="">
+            </p>
+
+            <table>
+                <p>Please tell us which times work best for you to come to the gym <br>for the next week</p>
+                <th>Time</th>
+                <th>Monday</th>   
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                
+                <tr>
+                    <td>9am</td>
+                    <td> <input id="time9m" name="time9m" type="checkbox" value=true></td>
+                    <td><input id="time9t" name="time9t" type="checkbox" value=true></td>
+                  <td> <input id="time9w" name="time9w" type="checkbox" value=true></td>
+                  <td> <input id="time9h" name="time9h" type="checkbox" value=true></td>
+                  <td> <input id="time9f" name="time9f" type="checkbox" value=true></td>
+                </tr>
+
+                <tr>
+                    <td>10am</td>
+                    <td> <input id="time10m" name="time10m" type="checkbox" value="true"></td>
+                    <td><input id="time10t" name="time10t" type="checkbox" value="true"></td>
+                  <td> <input id="time10w" name="time10w" type="checkbox" value="true"></td>
+                  <td> <input id="time10h" name="time10h" type="checkbox" value="true"></td>
+                  <td> <input id="time10f" name="time10f" type="checkbox" value="true"></td>
+                </tr>
+              
+              <tr>
+                    <td>11am</td>
+                    <td> <input id="time11m" name="time11m" type="checkbox" value="true"></td>
+                    <td><input id="time11t" name="time11t" type="checkbox" value="true"></td>
+                  <td> <input id="time11w" name="time11w" type="checkbox" value="true"></td>
+                  <td> <input id="time11h" name="time11h" type="checkbox" value="true"></td>
+                  <td> <input id="time11f" name="time11f" type="checkbox" value="true"></td>
+                </tr>
+              
+              <td>12pm</td>
+                    <td> <input id="time12m" name="time12m" type="checkbox" value="true"></td>
+                    <td><input id="time12t" name="time12t" type="checkbox" value="true"></td>
+                  <td> <input id="time12w" name="time12w" type="checkbox" value="true"></td>
+                  <td> <input id="time12h" name="time12h" type="checkbox" value="true"></td>
+                  <td> <input id="time12f" name="time12f" type="checkbox" value="true"></td>
+                </tr>
+          
+          <td>1pm</td>
+                    <td> <input id="time1m" name="time1m" type="checkbox" value="true"></td>
+                    <td><input id="time1t" name="time1t" type="checkbox" value="true"></td>
+                  <td> <input id="time1w" name="time1w" type="checkbox" value="true"></td>
+                  <td> <input id="time1h" name="time1h" type="checkbox" value="true"></td>
+                  <td> <input id="time1f" name="time1f" type="checkbox" value="true"></td>
+                </tr>
+            </table>
+
+            <p>
+                <p>What are you hitting?</p>
+                <input id="arms" name="arms" type="checkbox" value="true">
+                <label for="arms">Arms</label><br>
+
+                <input id="legs" name="legs" type="checkbox" value="true">
+                <label for="legs">Legs</label><br>
+
+                <input id="core" name="core" type="checkbox" value="true">
+                <label for="core">Core</label><br>
+
+                <input id="full body" name="full body" type="checkbox" value="true">
+                <label for="full body">Full Body</label><br>
+            </p>
+            <input type="submit" value="submit" onclick="confirmation()">
+        </form>
+    </div>
+<script type="text/javascript">
+        function confirmation() {
+            confirm("Thank you for entering your schedule! We'll let you know if we've found a match for you!");
+            }
+</script>
+
+</body>
+</html>

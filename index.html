@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>GymHoes</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+    <style type="text/css">
+      html{
+        scroll-behavior: smooth;
+      }
+      #header{
+        background-image:url(img/HOME.jpg);
+        width:100%;
+        height:750px;
+        background-size: cover;
+        background-position:top;
+        position:relative;
+        margin-top:100px;
+      }
+      #headerGrad{
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(1, 1, 1, 0.6));
+        width:100%;
+        height:750px;
+        position:absolute;
+        top:0px;
+      }
+      #titleWords{
+        position:absolute;
+        top:18%;
+        left:15%;
+        color:white;
+        text-align:center;
+      }
+      #titleWords h1{
+        font-size:6em;
+      }
+      #gallery{
+        display:flex;
+        width:90%;
+        height:600px;
+        margin-left:auto;
+        margin-right:auto;
+        align-content:center;
+        margin-bottom:10px;
+        scroll-behavior: smooth;
+      }
+      .center{
+        width:30%;
+        align-content:center;
+        display:flex;
+        position:relative;
+      }
+      .lr{
+        width:35%;
+        align-content:center;
+        display:flex;
+      }
+      .lrimage{
+        width:85%;
+        height:auto;
+        object-fit:contain;
+        margin-left:auto;
+        margin-right:auto;
+        transition: width 1s;
+      }
+      .centerimage{
+        height:auto;
+        width:70%;
+        object-fit:contain;
+        margin-left:auto;
+        margin-right:auto;
+        transition: width 1s;
+      }
+      .lr:hover .lrimage{
+        width:100%;
+      }
+      .center:hover .centerimage{
+        width:85%;
+      }
+      .textbox{
+        width:800px;
+        height:100px;
+        margin-right: auto;
+        margin-left: auto;
+        background-color:slategrey;
+        color:white;
+        padding: 25px 50px 50px 50px;
+        margin-bottom:100px;
+      }
+      #descripDefault{
+        text-align:center;
+        font-style:italic;
+        padding-top:75px;
+        height:75px;
+      }
+      #descrip-1,#descrip-2,#descrip-3{
+        display:none;
+      }
+    </style>
+</head>
+<body>
+  <div id="nav"> 
+    <div id="home">
+      <p id="homeT"><a href="index.html">GymGals</a></p>
+    </div>
+    <div class="link">
+      <p><a href="form.html">Mailing List</a></p>
+    </div>
+    <div class="link">
+      <p><a href="schedule.html">Schedule</a></p>
+    </div>
+    <div class="link">
+      <p><a href="#gallery">About</a></p>
+    </div>
+  </div>
+
+  <div id="header">
+    <div id="headerGrad">
+      <div id="titleWords">
+        <h1>Welcome to GymGals!</h1>
+      </div>
+    </div>
+  </div>
+    <div id="gallery">
+      <div class="lr" id="left">
+        <img src="img/smiles.jpg" class="lrimage">
+      </div>
+      <div class="center" id="centerI">
+        <img src="img/boxing.jpg" class="centerimage">
+      </div>
+      <div class="lr"  id="right">
+        <img src="img/cycling.jpg" class="lrimage">
+      </div>
+    </div>
+    <div id="descrip">
+      <div id="descripDefault" class="textbox">
+        <p>Hover over the pictures above to learn more about what we do!</p>
+      </div>
+      <div id="descrip-1" class="textbox">
+        <p>DESCRIPTION 1Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div id="descrip-2" class="textbox">
+        <p>DESCRIPTION 2Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. </p>
+      </div>
+      <div id="descrip-3" class="textbox">
+        <p>DESCRIPTION 3 Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.</p>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){   
+        $("#left").hover(function(){
+          $("#descripDefault").hide();
+          $("#descrip-2").hide();
+          $("#descrip-3").hide();
+          $("#descrip-1").show();
+        });
+        $("#centerI").hover(function(){
+          $("#descripDefault").hide();
+          $("#descrip-1").hide();
+          $("#descrip-3").hide();
+          $("#descrip-2").show();
+        });
+        $("#right").hover(function(){
+          $("#descripDefault").hide();
+          $("#descrip-1").hide();
+          $("#descrip-2").hide();
+          $("#descrip-3").show();
+        });
+      });
+    </script>
+
+</body>
+</html>
